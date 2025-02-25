@@ -1,12 +1,17 @@
 import React from 'react';
-import ToteBagList from '../components/ToteBagList';
+import { Link } from 'react-router-dom';
+import logo from '../assets/logo.jpeg';
+import ContactForm from '../components/ContactForm';
 
 const Home = () => {
     return (
-        <div>
-            <h1>Welcome to Our Tote Bag Collection</h1>
-            <ToteBagList />
-        </div>
+        <>
+            <div className='logo'>
+                <img src={logo} alt="Tote Bags" />
+            </div>
+            <h1>Bienvenido a nuestra colección de Tote Bags</h1>
+            <ContactForm  />
+        </>
     );
 };
 
